@@ -1,0 +1,62 @@
+[user]
+	name = tokzk
+	email = t@okzk.org
+
+[include]
+	path = .gitconfig.local
+
+[github]
+	user = tokzk
+
+[color]
+	diff        = auto
+	grep        = auto
+	branch      = auto
+	status      = auto
+	interactive = auto
+
+[merge]
+	ff = false # from 1.7.6
+
+[pull]
+	rebase = true # from 1.7.9
+
+[push]
+	default = current
+
+[core]
+	autocrlf     = input
+	quotepath    = false
+	excludesfile = ~/.gitignore_global
+	editor = emacs -nw
+
+[branch]
+	quotepath       = true
+	autosetuprebase = always
+
+[alias]
+	st = status
+	co = checkout
+	ci = commit -a
+	di = diff
+	br = branch
+	s = status
+
+[ghq]
+	root = ~/src
+
+[init]
+	templatedir = ~/.git_template
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
