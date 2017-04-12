@@ -1,5 +1,6 @@
--database=postgresql
+--database=postgresql
 --webpack
+--skip-bundle
 --skip-action-cable
 --skip-spring
 --skip-turbolinks
