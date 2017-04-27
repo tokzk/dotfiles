@@ -1,10 +1,6 @@
-# 少し凝った zshrc
-# License : MIT
-# http://mollifier.mit-license.org/
-
-source ~/.shell/path.sh
-source ~/.shell/env.sh
-source ~/.shell/aliases.sh
+source ~/.zsh/path.sh
+source ~/.zsh/env.sh
+source ~/.zsh/aliases.sh
 
 
 # 色を使用出来るようにする
@@ -148,3 +144,5 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+
+. /usr/local/etc/profile.d/z.sh

@@ -1,6 +1,7 @@
 ########################################
 # エイリアス
-alias brewup='brew file update && brew file cask_upgrade -C'
+alias brewup2='brew file update && brew file cask_upgrade -C'
+alias brewup='brew update && mas upgrade'
 alias puma-log='tail -f ~/Library/Logs/puma-dev.log'
 
 alias la='ls -a'
@@ -34,3 +35,4 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
+eval "$(hub alias -s)"
