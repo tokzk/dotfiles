@@ -1,4 +1,4 @@
 .DS_Store
 tmp
-.emacs.d
-.emacs.d_
+emacs.d/elpa
+
